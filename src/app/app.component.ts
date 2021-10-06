@@ -14,7 +14,8 @@ export class AppComponent {
 
   changeValue(item: any, id: number, j: number, event: any) {
     //  this.data[item][id] = event.target.textContent;
-    this.data[j][id] = event.target.textContent;
+    // This removes the white space from  the table
+    this.data[j][id] = event.target.textContent.replace(/\s/g, '');
     console.log('====>', j);
     console.log('====>', id, item);
     console.log('====>', this.data);
