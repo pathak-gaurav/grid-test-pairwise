@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  /* flex-direction: row;   */
+  grid-template-columns: 200px 200px 200px;
+  background: blue;
+}
+
+.row {
+  /* flex-direction: row; */
+  flex: 1 1 100px;
+  blackground: red;
+}
+
+.item {
+  flex: 1 1 100px;
+  background: yellow;
+}
+
+td {
+  width: 200px;
+}
